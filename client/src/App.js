@@ -118,37 +118,6 @@ export default App;
 //       await scrapeAndGeneratePDF(inputValue);
 //    };
 
-//    async function scrapeAndGeneratePDF(url) {
-//       try {
-//          let html;
-
-//          const response = await fetch(url);
-//          if (!response.ok) {
-//             throw new Error(
-//                "Network response was not ok " + response.statusText
-//             );
-//          }
-//          html = await response.text();
-//          console.log("Fetched HTML:", html);
-
-//          const parser = new DOMParser();
-//          const doc = parser.parseFromString(html, "text/html");
-
-//          const scrapedAddressLines = [];
-//          const addressLines = doc.querySelectorAll(".address-lines .line");
-//          addressLines.forEach((line) => {
-//             console.log("Extracted Line:", line.textContent.trim());
-//             scrapedAddressLines.push(line.textContent.trim());
-//          });
-
-//          console.log("Scraped Address Lines:", scrapedAddressLines);
-
-//          await createPDF(scrapedAddressLines);
-//       } catch (error) {
-//          console.error("Error:", error.message);
-//       }
-//    }
-
 //    return (
 //       <div className="App">
 //          <header className="App-header">
