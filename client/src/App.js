@@ -149,18 +149,6 @@ export default App;
 //       }
 //    }
 
-//    async function createPDF(addressLines) {
-//       const doc = new jsPDF();
-
-//       doc.setFontSize(12);
-//       addressLines.forEach((line, index) => {
-//          doc.text(line, 10, 10 + index * 10);
-//       });
-
-//       const fileName = "address-label-" + addressLines[0] + ".pdf";
-//       doc.save(fileName);
-//    }
-
 //    return (
 //       <div className="App">
 //          <header className="App-header">
