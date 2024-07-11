@@ -97,23 +97,3 @@ function App() {
 }
 
 export default App;
-
-// // src/App.js
-// import React, { useState } from "react";
-// import InputComponent from "./InputComponent";
-// import ButtonComponent from "./ButtonComponent";
-// import "./App.css";
-// import { jsPDF } from "jspdf";
-
-// function App() {
-//    // const [inputValue, setInputValue] = useState("./data/just_the_div.html");
-//    const [inputValue, setInputValue] = useState("./data/dummy.html");
-
-//    const handleInputChange = (value) => {
-//       setInputValue(value);
-//    };
-
-//    const handleButtonClick = async () => {
-//       // alert(`You entered: ${inputValue}`);
-//       await scrapeAndGeneratePDF(inputValue);
-//    };
