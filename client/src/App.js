@@ -117,22 +117,3 @@ export default App;
 //       // alert(`You entered: ${inputValue}`);
 //       await scrapeAndGeneratePDF(inputValue);
 //    };
-
-//    return (
-//       <div className="App">
-//          <header className="App-header">
-//             <h1>Create New Invoice</h1>
-//             <InputComponent
-//                onChange={handleInputChange}
-//                defaultValue={inputValue}
-//             />
-//             <ButtonComponent
-//                onClick={handleButtonClick}
-//                label="Create Invoice"
-//             />
-//          </header>
-//       </div>
-//    );
-// }
-
-// export default App;
