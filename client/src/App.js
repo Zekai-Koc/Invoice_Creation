@@ -17,7 +17,7 @@ function App() {
 
       try {
          const addressLines = await scrapeDataFromURL(inputValue);
-         // await generatePDF(addressLines);
+         await generatePDF(addressLines);
       } catch (error) {
          console.error("Error:", error);
       }
@@ -59,25 +59,25 @@ function App() {
    }
 
    // Function to generate PDF from the address lines
-   // async function generatePDF(addressLines) {
-   //    try {
-   //       const doc = new jsPDF();
+   async function generatePDF(addressLines) {
+      try {
+         const doc = new jsPDF();
 
-   //       // Set font size
-   //       doc.setFontSize(12);
+         // Set font size
+         // doc.setFontSize(12);
 
-   //       // Add the address lines to the PDF
-   //       addressLines.forEach((line, index) => {
-   //          doc.text(line, 10, 10 + index * 10); // Adjust positions as needed
-   //       });
+         // Add the address lines to the PDF
+         addressLines.forEach((line, index) => {
+            doc.text(line, 10, 10 + index * 10); // Adjust positions as needed
+         });
 
-   //       // Save the PDF and open it in a new tab
-   //       const fileName = "address-label-" + addressLines[0] + ".pdf";
-   //       doc.save(fileName);
-   //    } catch (error) {
-   //       console.error("PDF Generation Error:", error.message);
-   //    }
-   // }
+         // Save the PDF and open it in a new tab
+         const fileName = "address-label-" + addressLines[0] + ".pdf";
+         doc.save(fileName);
+      } catch (error) {
+         console.error("PDF Generation Error:", error.message);
+      }
+   }
 
    return (
       <div className="App">
